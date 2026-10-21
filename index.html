@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#160b16">
+  <title>Para Oliver ❤️</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       SECCIÓN 1 - PORTADA
+       ========================================================= -->
+  <section id="portada" class="cover">
+    <div class="cover-glow"></div>
+
+    <div class="cover-content">
+      <p class="eyebrow">Una pequeña sorpresa para ti</p>
+      <h1>Oliver</h1>
+
+      <p id="heartMessage" class="heart-message">Toca el corazón</p>
+
+      <button id="heartButton" class="heart-button" aria-label="Continuar sorpresa">
+        <span>♥</span>
+      </button>
+
+      <div class="progress-area">
+        <div class="progress-track">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <div id="progressPercent" class="progress-percent">0%</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTENIDO PRINCIPAL - BLOQUEADO HASTA COMPLETAR PORTADA
+       ========================================================= -->
+  <main id="mainContent" class="main-content is-locked">
+
+    <!-- SECCIÓN 2 - FOTOS -->
+    <section id="fotos" class="section photo-section">
+      <div class="section-inner">
+        <p class="section-kicker">Un día muy especial</p>
+        <h2>Hoy es el cumpleaños<br>de mi persona favorita</h2>
+        <p class="date">01 de Noviembre</p>
+
+        <div class="album">
+          <button class="album-arrow prev" id="prevPhoto" aria-label="Foto anterior">‹</button>
+
+          <div class="album-frame">
+            <div id="photoTrack" class="photo-track">
+              <img src="fotos/fotocumple.jpeg" alt="Foto cumple">
+              <img src="fotos/foto1.jpeg" alt="Foto 1">
+              <img src="fotos/foto2.jpeg" alt="Foto 2">
+              <img src="fotos/foto3.jpeg" alt="Foto 3">
+              <img src="fotos/foto4.jpeg" alt="Foto 4">
+              <img src="fotos/foto5.jpeg" alt="Foto 5">
+              <img src="fotos/foto6.jpeg" alt="Foto 5">
+              <img src="fotos/foto7.jpeg" alt="Foto 5">
+              <img src="fotos/foto8.jpeg" alt="Foto 5">
+              <img src="fotos/foto9.jpeg" alt="Foto 5">
+            </div>
+          </div>
+
+          <button class="album-arrow next" id="nextPhoto" aria-label="Foto siguiente">›</button>
+        </div>
+
+        <div id="photoDots" class="photo-dots"></div>
+        <p class="swipe-hint">Desliza para descubrir nuestros recuerdos</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3 - CARTA -->
+    <section id="carta" class="section letter-section">
+      <div class="section-inner">
+        <p class="section-kicker">Algo que quiero decirte</p>
+        <h2>Una carta para ti</h2>
+
+        <div id="letter" class="letter">
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="envelope-flap"></div>
+            <div class="envelope-front"></div>
+
+            <button id="openLetter" class="discover-button letter-button">
+              Descúbrelo
+            </button>
+          </div>
+
+          <div class="letter-paper">
+            <div class="letter-paper-inner">
+              <p class="letter-title">Feliz cumpleaños, mi amor ❤️</p>
+              <p>
+                Hoy quiero recordarte lo especial que eres para mí.
+                Gracias por cada momento, cada sonrisa y cada recuerdo
+                que hemos construido juntos.
+              </p>
+              <p>
+                Deseo que este nuevo año de vida esté lleno de bendiciones,
+                alegrías y muchos sueños cumplidos, espero que hoy te recuerde
+                lo especial que eres de verdad, incluso en esos días en los 
+                que tú mismo lo olvidas.
+              </p>
+              <p>
+                Estar contigo me ha cambiado de maneras que no esperaba. Trajiste
+                calma a mi caos y luz a lugares que ni siquiera sabía que estaban
+                oscuros. Me encanta la forma en que estas presente, cómo te importa
+                y cómo haces sentir a las personas que te rodean, especialmente a mi.
+              </p>
+              <p>
+                No necesito un día especial para amarte, pero agradezco que exista
+                uno solo para celebrarte. Espero que este año te regale más motivos
+                para sonreir, menos preocupaciones y más razones para creer en ti,
+                tal como yo creo en ti.
+              </p>
+              <p>
+                Feliz cumpleaños. Soy muy afortunado de amarte.❤️
+              </p>
+              <p class="letter-signature">Con todo mi amor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4 - AGRADECIMIENTO / BRINDIS -->
+    <section id="brindis" class="section toast-section">
+     <div class="toast-scene" id="toastScene">
+        <div class="glass glass-left">
+          🍷
+        </div>
+        <div class="glass glass-right">
+          🍷
+        </div>
+        <div id="sparkles" class="sparkles"></div>
+      </div>
+
+      <div class="section-inner toast-content">
+        <p class="section-kicker">Un brindis por ti..</p>
+        <h2>Por muchos cumpleaños<br>más juntos</h2>
+
+        <div class="toast-photo">
+          <img src="fotos/fotobrindis.jpeg" alt="Nuestro recuerdo">
+        </div>
+
+        <p class="thanks">Gracias por compartir tu vida conmigo.</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5 - CENA -->
+    <section id="cena" class="section dinner-section">
+      <div class="section-inner">
+        <p class="section-kicker">Y todavía hay algo más...</p>
+        <h2>Hay algo más para ti.</h2>
+
+        <button id="discoverDinner" class="discover-button">
+          Descubrir
+        </button>
+
+        <div id="dinnerCard" class="dinner-card">
+          <div class="dinner-card-inner">
+            <span class="restaurant-label">UNA NOCHE ESPECIAL</span>
+            <div class="cutlery">✦</div>
+            <h3>Cena</h3>
+            <p class="dinner-date">01 de Noviembre</p>
+            <p class="dinner-time">6:30 pm</p>
+
+            <div class="dinner-divider"></div>
+
+            <p class="place-label">Lugares a escoger:</p>
+            <p class="place">✦Restaurante Las Palmas</p>
+            <p class="place">✦Antojera Mi Junglita</p>
+
+            <p class="dinner-message">
+              Que lo disfrutes, que Dios te bendiga y te siga dando muchos
+              años más de vida y que estos años me permitas compartir también
+              mi vida contigo.
+            </p>
+
+            <p class="love">Te amo. ❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Música: coloca tu archivo en /musica/musica.mp3 -->
+  <audio id="backgroundMusic" preload="auto" loop>
+    <source src="musica/musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
